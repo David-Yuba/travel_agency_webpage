@@ -4,7 +4,22 @@ import image3 from "../assets/image3.jpg";
 import image4 from "../assets/image4.jpg";
 import image5 from "../assets/image5.jpg";
 
-export const tours = [
+type TourData = {
+  id: number;
+  title: string;
+  category: string;
+  destination: string;
+  duration: string;
+  description: string;
+  longDescription: string;
+  price: number;
+  image: string;
+  imageLarge: string;
+  dates: Array<string>;
+}
+type Tours = Array<TourData>
+
+export const tours : Tours = [
   {
     id: 1,
     title: "Planinarenje Velebit",
