@@ -7,7 +7,7 @@ const content = `import styles from "./${componentName.toLocaleLowerCase()}.modu
 export default function ${componentName}(){
 
     return (
-        <div style={styles}>
+        <div className={\`\${styles.${componentName.toLocaleLowerCase()}} ${componentName.toLocaleLowerCase()}\`}>
 
         </div>
     )
@@ -23,7 +23,7 @@ fs.writeFile(`./src/components/${componentName}/${componentName}.tsx`, content, 
   }
 });
 
-fs.writeFile(`./src/components/${componentName.toLocaleLowerCase()}/${componentName}.module.css`, "", {flag: "w+"}, err => {
+fs.writeFile(`./src/components/${componentName.toLocaleLowerCase()}/${componentName}.module.css`, `.${componentName.toLocaleLowerCase()} {\n\n}`, {flag: "w+"}, err => {
   if (err) {
     console.error(err);
   } else {

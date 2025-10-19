@@ -1,0 +1,16 @@
+
+
+/* Header, main, footer section */
+    /* Basic */
+body {
+    overflow-x: hidden;
+}
+
+    /* Backgrounds */
+body > div:first-child , body > div:last-child {
+    color: var(--bg);
+    background-color: var(--primary);
+}
+body > div:nth-child(2){
+    background-color: var(--bg);
+}

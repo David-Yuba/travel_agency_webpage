@@ -1,0 +1,29 @@
+.icon {
+    --icon-height: 32px;
+    --line-gap: 6px;
+    --line-height: calc((var(--icon-height) - var(--line-gap) * 2) / 3);
+    height: var(--icon-height);
+    width: var(--icon-height);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--line-gap);
+}
+
+.icon > div {
+    flex-grow: 1;
+
+    border-radius: 8px;
+    background-color: var(--bg);
+    transition: transform 0.5s linear;
+}
+
+.openIcon  > div:first-child {
+    transform: translateY(calc(var(--icon-height) / 2 - var(--line-height) / 2)) rotate(-45deg);
+}
+.openIcon  > div:last-child {
+    transform: translateY(calc(var(--icon-height) / -2 + var(--line-height) / 2)) rotate(45deg);
+}
+.openIcon  > div:nth-child(2) {
+    transform: scale(0);
+}

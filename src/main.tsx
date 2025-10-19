@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import "./styles/base/reset.css"
 import "./styles/base/global.css"
+import "./styles/base/base.css"
 
 import App from './App'
 

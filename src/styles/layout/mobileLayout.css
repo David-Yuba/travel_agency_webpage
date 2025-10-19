@@ -1,0 +1,18 @@
+/* Ordering of selectors goes from highest hierarchy to deeply nested elements
+    body -> header, main, footer -> individual pages
+*/
+
+header, main, footer {
+    --padding-r-l: 32px;
+    padding: 16px var(--padding-r-l);
+}
+
+header, footer {
+    --height: 80px;
+    height: var(--height);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

@@ -7,9 +7,11 @@ const content = `import styles from "./${pageName.toLocaleLowerCase()}.module.cs
 export default function ${pageName}(){
 
     return (
-        <main style={styles}>
+        <div className={\`\${styles.${pageName.toLocaleLowerCase()}} ${pageName.toLocaleLowerCase()}\`}>
+          <main>
 
-        </main>
+          </main>
+        </div>
     )
 }`
 
@@ -23,7 +25,7 @@ fs.writeFile(`./src/pages/${pageName}/${pageName}.tsx`, content, {flag: "w+"}, e
   }
 });
 
-fs.writeFile(`./src/pages/${pageName.toLocaleLowerCase()}/${pageName}.module.css`, "", {flag: "w+"}, err => {
+fs.writeFile(`./src/pages/${pageName.toLocaleLowerCase()}/${pageName}.module.css`, `.${pageName.toLocaleLowerCase()} {\n\n}`, {flag: "w+"}, err => {
   if (err) {
     console.error(err);
   } else {

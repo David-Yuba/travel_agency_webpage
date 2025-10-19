@@ -1,0 +1,13 @@
+.footer nav {
+    position: static;
+
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    
+    padding: 0px;
+    transform: translatex(0);
+    border-radius: 0px;
+    background-color: transparent;
+    transition: none;
+}
