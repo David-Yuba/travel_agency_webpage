@@ -1,0 +1,30 @@
+.accordion {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    margin-bottom: 8px; 
+}
+
+.accordion p {
+    margin: 0 !important;
+}
+
+.accordion > :first-child {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 8px 16px;
+    font-weight: bold;
+    background-color: #6eca7542;
+    color: var(--primary)
+}
+.accordion > :last-child {
+    height: 0;
+    padding: 0px;
+    background-color: white;
+}
+
+.accordion > .active:last-child{
+    height: auto;
+    padding: 8px 16px;
+}

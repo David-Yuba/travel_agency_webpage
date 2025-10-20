@@ -1,0 +1,52 @@
+import type { FormData, Error } from "./formData";
+
+export function validateName(value: string, field: keyof FormData){
+    if(!value.includes(" ")){
+        const message = "Unesite valjano ime";
+        return (v: Error) => v[field].includes(message) ? v : {...v, [field]:[...v[field], message]}
+    }
+    else{
+        const message = "Unesite valjano ime";
+        return (v: Error) => ({...v, [field]: v[field].filter(m => m !== message)})
+    }
+}
+export function validateEmail(value: string, field: keyof FormData){
+    if(!value.includes("@")){
+        const message = "Unesite valjani email koji sadrži @";
+        return (v: Error) =>v[field].includes(message) ? v : {...v, [field]:[...v[field], message]}
+    }
+    else{
+        const message = "Unesite valjani email koji sadrži @";
+        return (v: Error) => ({...v, [field]: v[field].filter(m => m !== message)})
+    }
+}
+export function validateTopic(value: string, field: keyof FormData){
+    if(Number(value) === 0){
+        const message = "Ovo polje je obavezno";
+        return (v: Error) =>v[field].includes(message) ? v : {...v, [field]:[...v[field], message]}
+    }
+    else{
+        const message = "Ovo polje je obavezno";
+        return (v: Error) => ({...v, [field]: v[field].filter(m => m !== message)})
+    }
+}
+export function validateMessageLength(value: string, field: keyof FormData){
+    if(value.length < 10){
+        const message = "Poruka mora imati 10 znakova";
+        return (v: Error) =>v[field].includes(message) ? v : {...v, [field]:[...v[field], message]}
+    }
+    else{
+        const message = "Poruka mora imati 10 znakova";
+        return (v: Error) => ({...v, [field]: v[field].filter(m => m !== message)})
+    }
+}
+export function validateGdpr(value: boolean, field: keyof FormData){
+    if(!value){
+        const message = "Uvjete morate prihvatiti";
+        return (v: Error) =>v[field].includes(message) ? v : {...v, [field]:[...v[field], message]}
+    }
+    else{
+        const message = "Uvjete morate prihvatiti";
+        return (v: Error) => ({...v, [field]: v[field].filter(m => m !== message)})
+    }
+}

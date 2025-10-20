@@ -1,0 +1,26 @@
+.contactform {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contactform h5 {
+    margin-bottom: 4px;
+}
+
+.contactform input:not(input[type="checkbox"]), .contactform textarea, .contactform select {
+    padding: 8px 16px;
+    width: 100%;
+
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background-color: white;
+}
+
+.contactform input[type="checkbox"]{
+    margin-right: 8px;
+}
+
+.contactform button {
+    max-width: 80px;
+}

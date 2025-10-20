@@ -4,7 +4,7 @@ import image3 from "../assets/image3.jpg";
 import image4 from "../assets/image4.jpg";
 import image5 from "../assets/image5.jpg";
 
-type TourData = {
+export type TourData = {
   id: number;
   title: string;
   category: string;
@@ -17,7 +17,7 @@ type TourData = {
   imageLarge: string;
   dates: Array<string>;
 }
-type Tours = Array<TourData>
+export type Tours = Array<TourData>
 
 export const tours : Tours = [
   {

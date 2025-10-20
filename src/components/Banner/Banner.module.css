@@ -1,0 +1,19 @@
+.banner {
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("../../assets/image1.jpg") center/cover no-repeat scroll;
+}
+
+.banner div {
+    padding: 16px 64px;
+    background-color: #0000005e;
+}
+
+.banner h1{
+    font-size: 2rem;
+    color: var(--bg);
+}

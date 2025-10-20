@@ -1,3 +1,44 @@
+/* Text elements formating */
+h3, h4, h5, h6 {
+    font-weight: bold;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.7rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.3rem;
+}
+h5 {
+    font-size: 1.20rem;
+}
+h6 {
+    font-size: 1.1rem;
+}
+/* Misc elements formating */
+button {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--bg);
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: var(--primary-900);
+}
+
+/* Form elements */
+.error-border {
+    border: 1px solid rgba(255, 0, 0, 0.267) !important;
+}
 
 
 /* Header, main, footer section */

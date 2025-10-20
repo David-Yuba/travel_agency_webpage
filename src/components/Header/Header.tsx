@@ -9,6 +9,7 @@ export default function Header(){
     const [isMobile, setIsMobile] = useState(true);
 
     useEffect(function(){
+        onResize();
         window.addEventListener("resize", onResize);
 
         return function(){
@@ -19,14 +20,13 @@ export default function Header(){
     function onResize(){
         if(window.innerWidth >= 768) setIsMobile(false);
         else setIsMobile(true);
-        console.log(isMobile);
     }
 
     return (
         <div className={styles.header}>
             <header>
                 <div>
-                    <h1>Travel agency</h1>
+                    <h4>Travel agency</h4>
                 </div>
                 {isMobile ? <MobileNavigation/> : <NavLinks/>}
             </header>

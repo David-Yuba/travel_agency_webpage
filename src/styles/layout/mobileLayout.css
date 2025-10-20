@@ -1,13 +1,13 @@
 /* Ordering of selectors goes from highest hierarchy to deeply nested elements
-    body -> header, main, footer -> individual pages
+    body -> background divs -> header, main, footer -> individual pages in main
 */
 
-header, main, footer {
+body > div > header, body > div > main, body > div > footer {
     --padding-r-l: 32px;
     padding: 16px var(--padding-r-l);
 }
 
-header, footer {
+body > div > header, body > div > footer {
     --height: 80px;
     height: var(--height);
 
