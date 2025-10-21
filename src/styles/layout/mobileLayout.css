@@ -19,3 +19,8 @@ body > div > header, body > div > footer {
     align-items: center;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+}
