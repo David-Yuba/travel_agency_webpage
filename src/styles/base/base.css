@@ -44,10 +44,14 @@ button:hover {
 }
 
 /* Form elements */
+
 .error-border {
     border: 1px solid rgba(255, 0, 0, 0.267) !important;
 }
-
+input:focus-visible, textarea:focus-visible{
+    outline: none;
+    border: 1px solid var(--accent) !important;
+}
 
 /* Header, main, footer section */
     /* Basic */

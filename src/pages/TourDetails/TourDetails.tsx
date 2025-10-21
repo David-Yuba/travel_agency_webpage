@@ -49,7 +49,7 @@ export default function TourDetails(){
                 </tr>))}
             </tbody>
           </table>
-        <button onClick={()=> alert("Uspješno ste rezervirali kartu!")}>Rezerviraj</button>
+          <button className={styles.stickyCta} onClick={()=> alert("Uspješno ste rezervirali kartu!")}>Rezerviraj</button>
         </section>
       </main>
     </div>

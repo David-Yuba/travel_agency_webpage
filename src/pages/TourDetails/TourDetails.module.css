@@ -5,6 +5,9 @@
 .tourdetails h3{
     margin-bottom: 8px;
 }
+.tourdetails img {
+    border-radius: 8px;
+}
 .tourdetails img{
     display: inline-block;
     margin-bottom: 8px;
@@ -17,4 +20,11 @@
 }
 .tourdetails table{
     margin-bottom: 8px;
+}
+
+.stickyCta {
+    position: sticky;
+    bottom: 60px;
+
+    background-color: var(--accent);
 }
