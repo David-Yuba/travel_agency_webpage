@@ -5,7 +5,7 @@ import SelectInput from "./FormFields/SelectInput";
 import TextareaInput from "./FormFields/TextareaInput";
 import CheckboxInput from "./FormFields/CheckboxInput";
 
-import { validateEmail, validateName, validateTopic, validateMessageLength, validateGdpr } from "./FormLogic/validators";
+import { validateName, validateNameLength, validateEmailAtSign, validateEmailDotSign, validateTopic, validateMessageLength, validateGdpr } from "./FormLogic/validators";
 import type { FormData } from "./FormLogic/formData";
 
 import styles from "./ContactForm.module.css";
@@ -56,21 +56,22 @@ export default function ContactForm(){
         }
         if(!errorFlag){ 
             console.log(data);
-            /* setData({
+            setData({
                 name: "",
                 email: "",
                 topic: 0,
                 message: "",
                 gdpr: false
-            }) */
+            })
+            alert("Poruka uspješno poslana!");
         }
 
     }
 
     return (
         <form className={`${styles.contactform} contactform`} onSubmit={onSubmit}>
-            <TextInput name="name" validateData={[validateName]} formControlData={createControlData("name")} htmlProps={{placeholder:"npr. Ana Anić"}}>Ime i prezime</TextInput>
-            <TextInput name="email" validateData={[validateEmail]} formControlData={createControlData("email")} htmlProps={{placeholder:"ana@example.com"}}>Email</TextInput>
+            <TextInput name="name" validateData={[validateName, validateNameLength]} formControlData={createControlData("name")} htmlProps={{placeholder:"npr. Ana Anić"}}>Ime i prezime</TextInput>
+            <TextInput name="email" validateData={[validateEmailAtSign, validateEmailDotSign]} formControlData={createControlData("email")} htmlProps={{placeholder:"ana@example.com"}}>Email</TextInput>
             <SelectInput name="topic" validateData={[validateTopic]} formControlData={createControlData("topic")}>Tema</SelectInput>
             <TextareaInput name="message" validateData={[validateMessageLength]} formControlData={createControlData("message")} htmlProps={{placeholder:"Opišite pitanje..."}}>Poruka</TextareaInput>
             <CheckboxInput name="gdpr" validateData={[validateGdpr]} formControlData={createControlData("gdpr")} >Prihvaćam uvjete obrade podataka</CheckboxInput>
