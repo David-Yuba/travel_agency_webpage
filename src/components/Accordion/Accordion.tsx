@@ -1,18 +1,14 @@
-import { useState } from "react";
-
 import styles from "./accordion.module.css";
 
-export default function Accordion({children, question}:{children:string, question: string}){
-
-    const [ isActive, setIsActive] = useState(false);
+export default function Accordion({children, question, open, setOpen, index}:{children:string, question: string, open: boolean, setOpen: React.Dispatch<React.SetStateAction<Array<boolean>>>, index: number}){
 
     return (
-        <div className={`${styles.accordion} accordion`} onClick={() => setIsActive(v => !v)}>
+        <div className={`${styles.accordion} accordion`} onClick={() => setOpen(v => v.map((v, i) => i === index ? !v : false))}>
             <div>
                 <p>{question}</p>
-                {isActive ? <p>-</p> : <p>+</p>}
+                {open ? <p>-</p> : <p>+</p>}
             </div>
-            <p className={isActive ? styles.active : ""}>{children}</p>
+            <p className={open ? styles.active : ""}>{children}</p>
         </div>
     )
 }
