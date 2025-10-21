@@ -1,0 +1,15 @@
+.home {
+
+}
+
+.home section > p{
+    margin-bottom: 12px;
+}
+
+.buttonsDiv {
+    display: flex;
+    gap: 12px;
+}
+.actionButton {
+    background-color: var(--accent);
+}

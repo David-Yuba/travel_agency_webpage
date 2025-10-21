@@ -1,4 +1,8 @@
-.tourcard {
+.categorycard img{
+    width: 100%;
+}
+
+.categorycard {
     display: flex;
     flex-direction: column;
     
@@ -6,20 +10,20 @@
 }
 
 
-.tourcard main {
+.categorycard main {
     padding-top: 8px;
     padding-bottom: 16px;
 }
 
-.tourcard footer {
+.categorycard footer {
     padding-bottom: 16px;
 }
-.tourcard main, .tourcard footer{
+.categorycard main, .categorycard footer{
     padding-left: 16px;
     padding-right: 16px;
 }
 
-.tourcard footer {
+.categorycard footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +31,6 @@
     margin-top: auto;
 }
 
-.tourcard main h5 {
+.categorycard main h5 {
     margin-bottom: 8px;
 }

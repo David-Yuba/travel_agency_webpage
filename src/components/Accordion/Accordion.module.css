@@ -2,7 +2,7 @@
     overflow: hidden;
     border: 1px solid var(--border);
     border-radius: 16px;
-    margin-bottom: 8px; 
+    margin-bottom: 12px; 
 }
 
 .accordion p {

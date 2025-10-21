@@ -1,0 +1,20 @@
+.tourdetails a{
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.tourdetails h3{
+    margin-bottom: 8px;
+}
+.tourdetails img{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.tourdetails .pills{
+    margin-bottom: 8px;
+}
+.tourdetails h4{
+    margin-bottom: 4px;
+}
+.tourdetails table{
+    margin-bottom: 8px;
+}

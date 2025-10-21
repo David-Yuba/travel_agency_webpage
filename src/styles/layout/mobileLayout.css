@@ -3,6 +3,9 @@
 */
 
 body > div > header, body > div > main, body > div > footer {
+    max-width: 992px;
+    margin: 0 auto;
+    
     --padding-r-l: 32px;
     padding: 16px var(--padding-r-l);
 }

@@ -20,6 +20,14 @@ h5 {
 h6 {
     font-size: 1.1rem;
 }
+b {
+    font-weight: bold;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 32px;
+}
+
 /* Misc elements formating */
 button {
   display: inline-block;
@@ -45,6 +53,16 @@ button:hover {
     /* Basic */
 body {
     overflow-x: hidden;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+body > div > main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
     /* Backgrounds */
@@ -53,5 +71,6 @@ body > div:first-child , body > div:last-child {
     background-color: var(--primary);
 }
 body > div:nth-child(2){
+    flex-grow: 1;
     background-color: var(--bg);
 }

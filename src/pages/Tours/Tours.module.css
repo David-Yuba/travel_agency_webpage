@@ -1,0 +1,30 @@
+.tours main{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.querySection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.querySection div {
+    display: flex;
+    gap: 16px;
+}
+.tours input, .tours select {
+    padding: 8px 16px;
+    width: 100%;
+
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background-color: white;
+}
+
+.tours input[type="checkbox"]{
+    margin-right: 8px;
+}
+
+.tours button {
+    max-width: 80px;
+}

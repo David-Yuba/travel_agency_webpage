@@ -1,7 +1,13 @@
 import { Routes, Route } from "react-router-dom"
 
 import Layout from "./Layout"
-import Test from "./pages/Test/Test"
+import Home from "./pages/Home/Home"
+import About from "./pages/About/About"
+import Categories from "./pages/Categories/Categories"
+import Tours from "./pages/Tours/Tours"
+import TourDetails from "./pages/TourDetails/TourDetails"
+import Contact from "./pages/Contact/Contact"
+import Faq from "./pages/Faq/Faq"
 
 function App() {
 
@@ -9,13 +15,13 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout/>}>
-          <Route index element={<Test/>}/>
-          <Route path="/about" element={<Test/>}/>
-          <Route path="/category" element={<Test/>}/>
-          <Route path="/tours" element={<Test/>}/>
-          <Route path="/tours/:id" element={<Test/>}/>
-          <Route path="/contact" element={<Test/>}/>
-          <Route path="/faq" element={<Test/>}/>
+          <Route index element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/category" element={<Categories/>}/>
+          <Route path="/tours" element={<Tours/>}/>
+          <Route path="/tours/:id" element={<TourDetails/>}/>
+          <Route path="/faq" element={<Faq/>}/>
         </Route>
       </Routes>
     </>

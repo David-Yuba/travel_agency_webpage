@@ -1,0 +1,7 @@
+.about main p:not(:last-child){
+    margin-bottom: 2px;
+}
+
+.about main li:not(:last-child){
+    margin-bottom: 2px;
+}

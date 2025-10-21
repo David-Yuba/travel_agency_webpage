@@ -2,12 +2,16 @@ import fs from "node:fs";
 import process from "node:process";
 
 const pageName = process.argv[2]
-const content = `import styles from "./${pageName.toLocaleLowerCase()}.module.css";
+const content = `import Banner from "../../components/Banner/Banner";
+
+import styles from "./${pageName.toLocaleLowerCase()}.module.css";
+import bannerImg from "../../assets/image1.jpg";
 
 export default function ${pageName}(){
 
     return (
         <div className={\`\${styles.${pageName.toLocaleLowerCase()}} ${pageName.toLocaleLowerCase()}\`}>
+          <Banner image={bannerImg}>${pageName}</Banner>
           <main>
 
           </main>

@@ -1,0 +1,14 @@
+.contact form {
+    max-width: 576px;
+}
+
+.contact h3{
+    margin-bottom: 4px;
+}
+.contact p:not(:last-child){
+    margin-bottom: 4px;
+}
+
+.contact h4{
+    margin-bottom: 4px;
+}
