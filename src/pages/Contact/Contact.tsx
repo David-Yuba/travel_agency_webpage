@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner/Banner";
 
 import styles from "./contact.module.css";
-import bannerImg from "../../assets/image1.jpg";
+import bannerImg from "../../assets/image3.jpg";
 import ContactForm from "../../components/ContactForm/ContactForm";
 
 export default function Contact(){

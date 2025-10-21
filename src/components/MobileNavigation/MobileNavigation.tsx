@@ -15,7 +15,7 @@ export default function MobileNavigation(){
                 <div></div>
                 <div></div>
             </div>
-            <NavLinks open={isOpen}/>
+            <NavLinks open={isOpen} setIsOpen={setIsOpen}/>
         </>
     )
 }

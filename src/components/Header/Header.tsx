@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MobileNavigation from "../MobileNavigation/MobileNavigation";
 
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 
 import NavLinks from "../NavLinks/NavLinks";
 

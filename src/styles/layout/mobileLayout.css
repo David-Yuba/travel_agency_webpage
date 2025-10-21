@@ -9,16 +9,21 @@ body > div > header, body > div > main, body > div > footer {
     --padding-r-l: 32px;
     padding: 16px var(--padding-r-l);
 }
-
 body > div > header, body > div > footer {
     --height: 80px;
-    height: var(--height);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+body > div > header{
+    height: var(--height);
+}
+body > div > footer {
+    gap: 8px;
+    flex-direction: column;
+    text-align: center;
+}
 .cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
