@@ -1,0 +1,41 @@
+.prez {
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  background: var(--text);
+  
+  color: var(--bg);
+}
+
+
+.prez button {
+  background-color: var(--text);
+  height: 100vh;
+  padding: 0 48px;
+}
+
+.prez textarea {
+  display: block;
+  resize: none;
+  border: none;
+  font-size: 16px;
+  color: var(--bg);
+  background-color: transparent;
+}
+.prez table {
+  display: inline-block;
+  width: auto !important;
+  resize: none;
+  border: none;
+  color: var(--text);
+}
+.prez table tr td:first-child {
+  color: orangered;
+}
+
+.prez thead[rowheading="true"] tr {
+  color: orangered;
+}
+.prez thead[rowheading="true"] ~ tbody td {
+  color: black;
+}

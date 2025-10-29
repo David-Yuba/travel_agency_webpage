@@ -1,0 +1,7 @@
+.gitnodecont {
+    display: flex;
+    --node-gap: 64px;
+    width: 100%;
+    user-select: none;
+    transition: transform 0.5s linear;
+}

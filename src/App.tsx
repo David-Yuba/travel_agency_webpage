@@ -9,6 +9,9 @@ import TourDetails from "./pages/TourDetails/TourDetails"
 import Contact from "./pages/Contact/Contact"
 import Faq from "./pages/Faq/Faq"
 
+import Prezentacija from "./pages/___Prezentacja___/Prezentacija"
+import PrezLayout from "./pages/___Prezentacja___/PrezLayout"
+
 function App() {
 
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="/tours" element={<Tours/>}/>
           <Route path="/tours/:id" element={<TourDetails/>}/>
           <Route path="/faq" element={<Faq/>}/>
+        </Route>
+        <Route path="/prez" element={<PrezLayout/>}>
+          <Route index element={<Prezentacija/>}/>
         </Route>
       </Routes>
     </>

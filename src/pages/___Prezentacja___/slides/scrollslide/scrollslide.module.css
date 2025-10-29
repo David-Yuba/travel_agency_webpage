@@ -1,0 +1,26 @@
+.scrollslide {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+}
+.scrollslide {
+    overflow: hidden;
+}
+.scrollslide > div {
+    width: 70%;
+    height: 100%;
+}
+
+.scrollslide header{
+    overflow: hidden;
+}
+.scrollslide main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: start;
+}
+.scrollslide main[maincomps= "true"] > div {
+    padding: 16px 8px;
+    background-color: rgba(128, 128, 128, 0.253);
+}

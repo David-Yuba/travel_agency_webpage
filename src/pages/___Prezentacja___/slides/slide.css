@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transition: transform 0.5s linear;
+} 
+
+.slide-content {
+    max-width: 992px;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.inactive-r {
+    transform: translateX(100vw);
+}
+.inactive-l {
+    transform: translateX(-100vw);
+}
+
+.arrows {
+    position: absolute;
+    padding: 32px;
+    bottom: 0px;
+    font-size: 4rem;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}

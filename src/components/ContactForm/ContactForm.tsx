@@ -42,17 +42,20 @@ export default function ContactForm(){
         e.preventDefault();
         type K = keyof FormData;
         let errorFlag = false;
-        for (const er in errors)
-            if (errors[er as K].length !== 0){
-                errorFlag=true;
-            }
+        
+        setErrors(validateName(data.name, "name"));
+        setErrors(validateNameLength(data.name, "name"));
+        setErrors(validateEmailAtSign(data.email, "email"));
+        setErrors(validateEmailDotSign(data.email, "email"));
+        setErrors(validateTopic(data.topic.toString(), "topic"));
+        setErrors(validateMessageLength(data.message, "message"));
+        setErrors(validateGdpr(data.gdpr, "gdpr"));
         for (const da in data){
             const value = data[da as K];
             if ( typeof value === "string" && value.length === 0)
                 errorFlag=true;
             if (typeof value === "boolean" && !value)
                 errorFlag=true;
-            
         }
         if(!errorFlag){ 
             console.log(data);

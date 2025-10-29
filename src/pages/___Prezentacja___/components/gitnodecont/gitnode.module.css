@@ -1,0 +1,41 @@
+.gitnode {
+    --node-height: 128px;
+    --node-width: 256px;
+    --link-length: 36px;
+    --border-width: 4px;
+    width: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    padding: 16px 32px;
+    background-color: var(--card);
+    color: black;
+    border: var(--border-width) solid var(--muted);
+}
+
+.gitnode:not(:last-child)::after {
+    content:" ";
+    position: absolute;
+    top: calc((var(--node-height) - var(--border-width)) / 2 - var(--link-height) / 2 - var(--border-width));
+    left: calc(var(--node-width) - var(--border-width));
+    z-index: 10;
+    
+    --link-height: 4px;
+    background-color: var(--muted);
+    width: var(--link-length);
+    height: var(--link-height);
+}
+
+.dot {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 10;
+    height: 12px;
+    width: 12px;
+    background-color: var(--accent);
+    border: 2px solid var(--muted);
+    border-radius: 50%;
+}
