@@ -6,10 +6,10 @@ export default function ScrollSlide({children, currentSlide, slideNum}: {childre
     const [scroll, setScroll] = useState(0);
 
     function handleScroll(e: WheelEvent<HTMLDivElement>){
-
-        setScroll(prev => (prev*100 + e.deltaY)/100 > 500 ? 500 :
-            (prev*100 + e.deltaY)/100 < 0 ? 0 : 
-            (prev*100 + e.deltaY)/100 );
+        const scrollValue = e.deltaY*10/100;
+        setScroll(prev => prev + scrollValue > 500 ? 500 :
+            prev + scrollValue < 0 ? 0 : 
+            prev + scrollValue );
     }
     return (
         <div onWheel={handleScroll}  className={currentSlide === slideNum ? `slide active ${styles.scrollslide}` : currentSlide > slideNum ? `slide inactive-l ${styles.scrollslide}` : `slide inactive-r ${styles.scrollslide}`}>

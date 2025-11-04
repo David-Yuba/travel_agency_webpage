@@ -10,9 +10,10 @@
 
     position: relative;
     padding: 16px 32px;
-    background-color: var(--card);
-    color: black;
+    background-color: #f8fafc2d;
+    color: var(--bg);
     border: var(--border-width) solid var(--muted);
+    border-radius: 16px;
 }
 
 .gitnode:not(:last-child)::after {

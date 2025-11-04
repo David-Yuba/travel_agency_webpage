@@ -1,0 +1,34 @@
+Dobar dan, zovem se David i danas ću proći glavne dijelove stranice, i ono o čemu sam razmišljao tijekom razvoja.
+
+Početi ću sa ograničenjima kojih sam se držao. Ograničenja zadana u zadatku su očita te njih neću opravdavati, samo ću ih spomenuti 
+i kazati svoje mišljenje o njima. Dok ću svoja nepisana ograničenja pokupšati opravdati.
+Dizajna vjerujem da sam se držao svega što je vidljivo na slikama, zajedno i sa funkcijonalnostima koje su zapisane u pdf-u. Redosljed rješavanja i
+git commitovi su u pravilu ista stvar, i to je iskreno bio najteži dio zadatka. Meni osobno takav redosljed rješavanja nije odgovarao, i s obzirom
+da je zadatak AI generirani nisam siguran ako bi ijednoj osobi koja rješava zadatak bez AI pomagala odgovarao. U nekim commitovima sam se malo požurio
+te sam napisao više nego se tražilo od zadatka no to sam pokušao smanjiti koliko je moguće pomoću rebase-a.
+Ograničenja kojih sam se držao zbog sebe su korištenje typescripta, koje se pokazalo korisno, ali i pomalo iritantno. Volio bih da sam imao motivacije
+nekoliko puta refaktorirati kod i uistinu iskoristi typescript za čitkost koda i kao olakšanje u razumijevanju koda, no nisam u to uložio dovoljno
+volje ni vremena.
+Što se tiče CSS-a koristio sam minimalni broj class selektora. U pravilu sam se držao class selektora samo za ograničavanje tag selektora unutar stranice 
+ili komponente. Razlog tome je jedonstavan. Vjerujem da pisanje css-a na takav način pridonosi sveopćem skladnom izgledu stranice. To ću još jednom proći u sljedećem slajdu. Koristio sam .module.css prvenstveno zbog vježbe, no na kraju svega sada mi je žao što sam
+ga koristio jer nije bio pretjerano koristan i nije radio na način na koji sam pretpostavio da funkcionira.
+
+Na ovom slide-u su svi git commitovi. Ovdje u gornjem kutu je zeleni znak što znači da ovaj commit prati zadatak. Na kraju su commitovi nevezani sa zadatkom
+tako da njih neću prolaziti. Puno toga u ovoj prezentaciji ću samo preskočiti, jer sam za vremensko ograničenje od pet minuta saznao tek prije dva dana.
+
+Što se tiče inicijalnog commita definirao sam dvije dev naredbe, kako bih si olakšao stvaranje novih stranica i komponenti. Ono što je važno u njima
+je da se iz njih može isčitati osnovna struktura stranice ili komponente. Na slidu samo piše string koji će se ispisati u .tsx file i iz njega se može vidjeti
+da će svaka nova stranica importat styles iz novo kreirane .module.css datoteke. Najviši div koji se nalazi u toj komponenti sadržavati će dvije klase.
+Jednu generiranu klasu pomoću .module.css-a i jednu globalnu klasu čije je ime isto imenu stranice.
+Isto se može primjeniti i na komponentu.
+
+Osnovna struktura html koju sam ciljao vidi se u layoutu. Layout se injecta direktno u body sa id-om root, svaka stranica ima isti header i footer,
+a osnovna struktura outleta se može isčitati iz prije spomenutih dev naredbi.
+Layout sam koristio zbog vježbe. Želio sam napraviti stranicu sa dva layouta, jedan je ova stranica i jedan je ova prezentacija. U ovom primjeru 
+u protivnom nebi bio potreban. 
+Ideja mobile layout i desktop layout css filova je grupirati sve selektore i css svojstva koja su podložna media querry
+promjenama. Za to postoji jedna iznimka no neću u nju ulaziti zbog vremena.
+U base styles nalaze se svi bazni stilovi, koji se moraju koristiti na svim stranicama i unutar svih komponenti. Ovdje se također nalaze i css varijable.
+To je u pravilu to što se tiče širokog pogleda na projekt. Prije nego prepustim vama riječ za pitanja samo bi još dodao jednu specifičnu stvar koja se tiče UX
+buga koji mi se potkrao u zip-anu datoteku. Problem je bio u kontakt stranici i nedostatku verifikacije unosa tijekom submita. U verziji koju ste vi dobili.
+kada se klikne submit, ništa se ne dogodi, čak se ni errori ne prikažu. Sada je to riješeno.

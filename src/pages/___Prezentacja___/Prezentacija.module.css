@@ -29,9 +29,23 @@
   border: none;
   color: var(--text);
 }
-.prez table tr td:first-child {
-  color: orangered;
+.prez table thead {
+  background-color: inherit;
 }
+.prez table tr td:first-child {
+  background: #f1f5f9;
+  color: orangered;
+  border-right: 1px solid var(--border);
+}
+.prez table[multiRowTable="true"] thead {
+  background: #f1f5f9;
+  color: orangered;
+  border-right: 1px solid var(--border);
+}
+.prez table[multiRowTable="true"] tr td:first-child {
+  background-color: inherit;
+}
+
 
 .prez thead[rowheading="true"] tr {
   color: orangered;

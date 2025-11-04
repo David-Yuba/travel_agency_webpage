@@ -253,7 +253,7 @@ export default function Prezentacija(){
               <li>{"handleChange(e: React.ChangeEvent<HTMLInputElement>)"}</li>
             </ul>
             <h5>FormFields props</h5>
-            <table>
+            <table multiRowTable="true">
               <thead rowheading={"true"}>
                 <tr>
                   <td>FieldName</td>
