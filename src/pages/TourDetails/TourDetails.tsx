@@ -3,7 +3,7 @@ import Banner from "../../components/Banner/Banner";
 
 import { tours, type TourData } from "../../data/tours";
 
-import styles from "./tourdetails.module.css";
+import styles from "./TourDetails.module.css";
 
 export default function TourDetails(){
   const paramId: number = Number(useParams().id?.slice(1));

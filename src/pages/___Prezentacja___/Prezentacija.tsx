@@ -37,14 +37,16 @@ export default function Prezentacija(){
           <h4>Ograničenja zadana u zadatku:</h4>
           <ul>
             <li>Dizajn</li>
+            <li>Funkcionalnosti</li>
             <li>Redosljed rješavanja podzadataka</li>
             <li>Git commitovi</li>
           </ul>
           <h4>Ograničenja kojih sam se nepisano držao:</h4>
           <ul>
             <li>Typescript</li>
-            <li>Minimalni broj css class selectora</li>
             <li>.module.css za ograničavanje css</li>
+            <li>Minimalni broj css class selectora</li>
+            <li>HTML struktura</li>
           </ul>
         </main>
         <aside style={{gridColumn: "span 6", gridRow: "7 / 8"}}>

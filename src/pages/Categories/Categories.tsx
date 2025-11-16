@@ -4,7 +4,7 @@ import Banner from "../../components/Banner/Banner";
 import Cards from "../../components/Cards/Cards";
 import CategoryCard from "../../components/CategoryCard/CategoryCard";
 
-import styles from "./categories.module.css";
+import styles from "./Categories.module.css";
 import bannerImg from "../../assets/image4.jpg";
 
 export default function Categories(){

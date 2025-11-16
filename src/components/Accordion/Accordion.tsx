@@ -1,4 +1,4 @@
-import styles from "./accordion.module.css";
+import styles from "./Accordion.module.css";
 
 export default function Accordion({children, question, open, setOpen, index}:{children:string, question: string, open: boolean, setOpen: React.Dispatch<React.SetStateAction<Array<boolean>>>, index: number}){
 

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import type { TourData } from "../../data/tours";
 
-import styles from "./tourcard.module.css";
+import styles from "./TourCard.module.css";
 
 export default function TourCard({cardData}: {cardData: TourData | string}){
 

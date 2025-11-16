@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 
-import styles from "./about.module.css";
+import styles from "./About.module.css";
 import bannerImg from "../../assets/image2.jpg";
 
 export default function About(){

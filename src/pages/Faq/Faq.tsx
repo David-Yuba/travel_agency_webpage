@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Banner from "../../components/Banner/Banner";
 
-import styles from "./faq.module.css";
+import styles from "./Faq.module.css";
 import bannerImg from "../../assets/image6.jpg";
 import Accordion from "../../components/Accordion/Accordion";
 

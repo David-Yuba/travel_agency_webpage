@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styles from "./navlinks.module.css";
+import styles from "./NavLinks.module.css";
 
 export default function NavLinks({mini = false, open = false, setIsOpen}:{mini?:boolean, open?: boolean, setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>}){
 

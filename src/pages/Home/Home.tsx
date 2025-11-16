@@ -7,7 +7,7 @@ import TourCard from "../../components/TourCard/TourCard";
 import { tours } from "../../data/tours";
 
 import bannerImg from "../../assets/image1.jpg";
-import styles from "./home.module.css";
+import styles from "./Home.module.css";
 
 export default function Home(){
     const toursArray = tours.slice(0,3); 

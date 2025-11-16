@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 
-import styles from "./contact.module.css";
+import styles from "./Contact.module.css";
 import bannerImg from "../../assets/image3.jpg";
 import ContactForm from "../../components/ContactForm/ContactForm";
 

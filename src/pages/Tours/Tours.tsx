@@ -7,7 +7,7 @@ import Banner from "../../components/Banner/Banner";
 import Cards from "../../components/Cards/Cards";
 import TourCard from "../../components/TourCard/TourCard";
 
-import styles from "./tours.module.css";
+import styles from "./Tours.module.css";
 import bannerImg from "../../assets/image5.jpg";
 
 export default function Tours(){

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { TourData } from "../../data/tours";
-import styles from "./categorycard.module.css";
+import styles from "./CategoryCard.module.css";
 
 export default function CategoryCard({cardData}: {cardData: string | TourData}){
     

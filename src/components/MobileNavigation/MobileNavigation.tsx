@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import NavLinks from "../NavLinks/NavLinks";
 
-import styles from "./mobilenavigation.module.css";
+import styles from "./MobileNavigation.module.css";
 
 
 export default function MobileNavigation(){
